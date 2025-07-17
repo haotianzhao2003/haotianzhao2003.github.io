@@ -21,18 +21,18 @@
   </script>
 
   <meta name="description" content="O.0">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Java SE | 强化阶段笔记">
-<meta property="og:url" content="http://example.com/2025/05/13/JavaSE-Phase2/index.html">
+<meta property="og:url" content="http://example.com/dropped/JavaSE-Phase2.html">
 <meta property="og:site_name" content="Haotian Zhao &#39;s Personal Blog">
 <meta property="og:description" content="O.0">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-13T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-15T15:24:42.105Z">
+<meta property="article:modified_time" content="2025-05-16T05:21:36.743Z">
 <meta property="article:author" content="Haotian Zhao">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2025/05/13/JavaSE-Phase2/">
+<link rel="canonical" href="http://example.com/dropped/JavaSE-Phase2">
 
 
 <script id="page-configurations">
@@ -40,12 +40,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Java SE | 强化阶段笔记 | Haotian Zhao 's Personal Blog</title>
+  <title>Java SE | 强化阶段笔记 | Haotian Zhao 's Personal Blog
+</title>
   
 
 
@@ -135,7 +136,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">1</span></a>
 
   </li>
   </ul>
@@ -154,66 +155,33 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+  
+  
 
-          <div class="content post posts-expand">
+          <div class="content page posts-expand">
             
 
     
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/05/13/JavaSE-Phase2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/myphoto.jpg">
-      <meta itemprop="name" content="Haotian Zhao">
-      <meta itemprop="description" content="Welcome to my blog !!!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Haotian Zhao 's Personal Blog">
-    </span>
+    
+    
+    <div class="post-block" lang="zh-CN">
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Java SE | 强化阶段笔记
-        </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+<h1 class="post-title" itemprop="name headline">Java SE | 强化阶段笔记
+</h1>
 
-              <time title="创建时间：2025-05-13 23:00:00" itemprop="dateCreated datePublished" datetime="2025-05-13T23:00:00+08:00">2025-05-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-05-15 23:24:42" itemprop="dateModified" datetime="2025-05-15T23:24:42+08:00">2025-05-15</time>
-              </span>
+<div class="post-meta">
+  
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
-        <hr>
+      
+      
+      <div class="post-body">
+          <hr>
 <p>O.0</p>
 <span id="more"></span>
 
@@ -615,33 +583,28 @@
 
 <hr>
 <p>匿名内部类（重点）</p>
+<ul>
+<li>就是一种特殊的局部内部类；匿名是指程序员不需要为这个类声明名字</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> 类或接口(参数值...)&#123;</span><br><span class="line">	类体(一般是方法重写);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<ul>
+<li>特点：匿名内部类本质就是一个子类，并会立即创建出一个子类对象</li>
+<li>作用：用于更方便的创建一个子类对象</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="comment">//系统会把这个匿名内部类编译成一个子类，然后立即创建一个子类对象出来</span></span><br><span class="line">        <span class="type">Animal</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Animal</span>()&#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">cry</span><span class="params">()</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;喵喵叫&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">		&#125;</span><br><span class="line">        a.cry();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title function_">cry</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      </div>
+      
+      
+      
     </div>
+    
 
     
     
     
-
-      <footer class="post-footer">
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2025/05/09/JavaSE-Phase1/" rel="prev" title="Java SE | 基础阶段笔记">
-      <i class="fa fa-chevron-left"></i> Java SE | 基础阶段笔记
-    </a></div>
-      <div class="post-nav-item"></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
 
 
           </div>
@@ -708,7 +671,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
